@@ -94,6 +94,9 @@ if __name__ == '__main__':
         elif 'open code' in query:
             codePath = "C:\\Users\\Asus\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
+        elif 'shutdown' in query:
+            os.system('cmd /k "shutdown -s -t 00"')
+            
         elif 'email to abhishek' in query:
             try:
                 speak("what should I say?")
